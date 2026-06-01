@@ -5,28 +5,28 @@ import React from "react";
 
 const projects = [
   {
-    title: "Quantum Finance",
-    category: "SaaS Application",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80",
-    color: "from-blue-500 to-cyan-400"
+    title: "Restaurant Website Concept",
+    category: "Food & Beverage",
+    image: "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=800&q=80",
+    color: "from-orange-500 to-amber-500"
   },
   {
-    title: "Nova E-Commerce",
-    category: "Web Platform",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80",
+    title: "Real Estate Platform Concept",
+    category: "Property Tech",
+    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=800&q=80",
+    color: "from-blue-500 to-indigo-500"
+  },
+  {
+    title: "AI SaaS Dashboard Concept",
+    category: "Artificial Intelligence",
+    image: "/projects/ai_dashboard.png",
     color: "from-purple-500 to-pink-500"
   },
   {
-    title: "Aura AI",
-    category: "AI Integration",
-    image: "https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=800&q=80",
-    color: "from-emerald-400 to-cyan-500"
-  },
-  {
-    title: "Apex Logistics",
-    category: "Enterprise System",
-    image: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80",
-    color: "from-orange-400 to-red-500"
+    title: "Ecommerce Store Concept",
+    category: "Digital Retail",
+    image: "/projects/ecommerce.png",
+    color: "from-emerald-500 to-teal-500"
   }
 ];
 
@@ -83,6 +83,10 @@ export default function Portfolio() {
                   alt={project.title}
                   className="object-cover w-full h-full grayscale group-hover:grayscale-0 group-hover:scale-105 transition-all duration-700 ease-out"
                 />
+
+                <div className="absolute top-4 left-4 z-20 bg-black/60 backdrop-blur-md border border-white/10 px-3 py-1 rounded-full text-xs font-semibold text-gray-300">
+                  Concept Project
+                </div>
 
                 <div className="absolute top-4 right-4 z-20 w-12 h-12 bg-white/10 backdrop-blur-md rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 group-hover:rotate-45 transition-all duration-300">
                   <ArrowUpRight className="w-5 h-5 text-white" />

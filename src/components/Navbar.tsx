@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
+import Logo from "@/components/Logo";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -33,11 +34,8 @@ export default function Navbar() {
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
-        <Link href="/" className="text-2xl font-bold tracking-tighter flex items-center gap-2">
-          <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-electric-blue to-neon-purple flex items-center justify-center">
-            <span className="text-white text-lg leading-none mt-[-2px]">3</span>
-          </div>
-          3dwebs
+        <Link href="/" className="flex items-center -ml-4">
+          <Logo showTagline={false} className="h-10" />
         </Link>
 
         {/* Desktop Nav */}

@@ -34,30 +34,39 @@ function Counter({ from = 0, to, duration = 2, suffix = "" }: { from?: number, t
 
 export default function Trust() {
   const stats = [
-    { label: "Projects Delivered", value: 150, suffix: "+" },
-    { label: "Client Satisfaction", value: 99, suffix: "%" },
-    { label: "Years of Experience", value: 10, suffix: "+" },
-    { label: "Awards Won", value: 25, suffix: "+" },
+    { label: "Custom Built", value: "100%", isNumber: true, numVal: 100, suffix: "%" },
+    { label: "Modern Tech Stack", value: "Modern", isNumber: false },
+    { label: "Performance Optimized", value: "99+", isNumber: true, numVal: 99, suffix: "+" },
+    { label: "Mobile First", value: "Mobile First", isNumber: false },
   ];
 
-  const logos = ["Vercel", "Stripe", "Linear", "Framer", "Apple", "Github"];
+  const logos = [
+    "React",
+    "Next.js",
+    "Three.js",
+    "Tailwind CSS",
+    "Node.js",
+    "MongoDB",
+    "AWS",
+    "Framer Motion"
+  ];
 
   return (
     <section className="py-24 relative z-10 bg-deep-space border-y border-white/5">
       <div className="container mx-auto px-6">
         <p className="text-center text-gray-500 uppercase tracking-widest text-sm mb-12 font-medium">
-          Trusted by Industry Leaders
+          BUILT WITH MODERN TECHNOLOGIES
         </p>
         
-        <div className="flex flex-wrap justify-center items-center gap-10 md:gap-20 mb-24 opacity-60">
+        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16 mb-24 opacity-60">
           {logos.map((logo, i) => (
             <motion.div
               key={logo}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.1, duration: 0.5 }}
-              className="text-2xl font-bold tracking-tight text-white/80"
+              transition={{ delay: i * 0.08, duration: 0.5 }}
+              className="text-lg md:text-xl font-bold tracking-tight text-white/80 font-mono hover:text-white transition-colors"
             >
               {logo}
             </motion.div>
@@ -74,10 +83,14 @@ export default function Trust() {
               transition={{ delay: i * 0.1 + 0.2, duration: 0.5 }}
               className="text-center"
             >
-              <div className="text-4xl md:text-5xl font-extrabold text-white mb-2">
-                <Counter to={stat.value} suffix={stat.suffix} />
+              <div className="text-3xl md:text-5xl font-extrabold text-white mb-2 font-mono">
+                {stat.isNumber ? (
+                  <Counter to={stat.numVal!} suffix={stat.suffix} />
+                ) : (
+                  <span className="text-gradient">{stat.value}</span>
+                )}
               </div>
-              <div className="text-sm md:text-base text-gray-400 font-medium">{stat.label}</div>
+              <div className="text-xs md:text-sm text-gray-400 font-medium tracking-wider uppercase">{stat.label}</div>
             </motion.div>
           ))}
         </div>

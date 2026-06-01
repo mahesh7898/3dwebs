@@ -4,14 +4,14 @@ import { Monitor, ShoppingBag, Cloud, Cpu, Settings, Layout, Zap, Wrench } from 
 import React from "react";
 
 const services = [
-  { icon: Monitor, title: "Custom Website Development", desc: "Award-winning bespoke websites with immersive 3D experiences." },
-  { icon: ShoppingBag, title: "E-Commerce Development", desc: "High-conversion online stores with premium architectures." },
-  { icon: Cloud, title: "SaaS Development", desc: "Scalable web applications built on modern serverless stacks." },
-  { icon: Cpu, title: "AI Integration", desc: "Intelligent automation and AI-driven features for your business." },
-  { icon: Settings, title: "Automation Solutions", desc: "Streamlining workflows with custom software automation." },
-  { icon: Layout, title: "UI/UX Design", desc: "World-class interface design focused on user conversion." },
-  { icon: Zap, title: "Website Optimization", desc: "Lightning fast performance tuning and technical SEO." },
-  { icon: Wrench, title: "Maintenance & Support", desc: "Enterprise-grade reliability and continuous improvements." },
+  { icon: Monitor, title: "Custom Website Development", desc: "Bespoke high-performance websites engineered to captivate visitors and convert them into paying customers." },
+  { icon: ShoppingBag, title: "E-Commerce Development", desc: "High-conversion online stores designed with intuitive buying journeys to maximize average order value." },
+  { icon: Cloud, title: "SaaS Development", desc: "Scalable web platforms designed to support rapid business growth and deliver smooth, intuitive user experiences." },
+  { icon: Cpu, title: "AI Integration", desc: "Intelligent automated chatbots and smart features designed to save time and boost customer engagement." },
+  { icon: Settings, title: "Automation Solutions", desc: "Custom workflow systems built to eliminate repetitive manual tasks and boost team productivity." },
+  { icon: Layout, title: "UI/UX Design", desc: "Modern, professional user interfaces designed specifically to guide visitors toward your primary business actions." },
+  { icon: Zap, title: "Website Optimization", desc: "Speed tuning and layout optimization designed to keep visitors on your page and boost search engine rankings." },
+  { icon: Wrench, title: "Maintenance & Support", desc: "Ongoing expert care and regular updates ensuring your website remains secure and works perfectly 24/7." },
 ];
 
 export default function Services() {
