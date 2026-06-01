@@ -112,7 +112,7 @@ export default function Contact() {
                 </button>
                 
                 <a 
-                  href="https://wa.me/+918790906244" 
+                  href="https://wa.me/918799062644" 
                   target="_blank" 
                   rel="noopener noreferrer" 
                   className="flex items-center justify-center gap-2 border border-emerald-500/30 hover:border-emerald-500 bg-emerald-500/10 hover:bg-emerald-500/20 text-emerald-400 transition-all font-bold px-6 py-4 rounded-xl active:scale-[0.98]"

@@ -8,14 +8,14 @@ const plans = [
     price: "₹9,999",
     desc: "Perfect for startups and small businesses aiming for a fast, clean launch.",
     features: [
-      "1–3 Pages",
+      "1–4 Pages",
       "Premium Design",
       "Basic 3D Hero",
       "Mobile Responsive",
       "Contact Form",
       "WhatsApp Integration",
       "Basic SEO",
-      "15 Days Support"
+      "Free Hosting+Basic Domain"
     ],
     popular: false
   },
@@ -24,20 +24,20 @@ const plans = [
     price: "₹24,999",
     desc: "The sweet spot for growing brands that need custom interactive experiences.",
     features: [
-      "5–8 Pages",
+      "5–10 Pages",
       "Advanced UI/UX",
       "Interactive 3D Elements",
       "SEO Optimization",
       "Blog/CMS",
       "Analytics Setup",
       "Performance Optimization",
-      "1 Month Support"
+      "Free Hosting+Domain"
     ],
     popular: true
   },
   {
     name: "Pro Package",
-    price: "₹59,999+",
+    price: "₹49,999+",
     desc: "For enterprises ready to scale with full custom architectures & AI integration.",
     features: [
       "Unlimited Pages",
@@ -47,7 +47,7 @@ const plans = [
       "Advanced Animations",
       "Custom Dashboard",
       "Priority Support",
-      "3 Months Support"
+      "Free Hosting+Domain"
     ],
     popular: false
   }

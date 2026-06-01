@@ -45,7 +45,7 @@ export default function ConversionWidgets() {
       {/* Floating WhatsApp Widget */}
       <div className="fixed bottom-6 right-6 z-50">
         <motion.a
-          href="https://wa.me/+919876543210"
+          href="https://wa.me/918799062644"
           target="_blank"
           rel="noopener noreferrer"
           initial={{ scale: 0 }}
