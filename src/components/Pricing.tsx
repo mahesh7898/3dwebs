@@ -5,7 +5,7 @@ import { Check } from "lucide-react";
 const plans = [
   {
     name: "Starter Package",
-    price: "₹9,999",
+    price: "₹14,999",
     desc: "Perfect for startups and small businesses aiming for a fast, clean launch.",
     features: [
       "1–4 Pages",
@@ -15,7 +15,7 @@ const plans = [
       "Contact Form",
       "WhatsApp Integration",
       "Basic SEO",
-      "Free Hosting+Basic Domain"
+      "Free Hosting + Domain"
     ],
     popular: false
   },
@@ -31,7 +31,7 @@ const plans = [
       "Blog/CMS",
       "Analytics Setup",
       "Performance Optimization",
-      "Free Hosting+Domain"
+      "Free Hosting + Domain"
     ],
     popular: true
   },
@@ -47,7 +47,7 @@ const plans = [
       "Advanced Animations",
       "Custom Dashboard",
       "Priority Support",
-      "Free Hosting+Domain"
+      "Free Hosting + Domain"
     ],
     popular: false
   }
